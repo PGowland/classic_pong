@@ -35,9 +35,9 @@ while game_is_on:
         ball.bounce()
     if ball.xcor() <= -400 or ball.xcor() >= 400:
         if ball.xcor() <= -400:
-            player_1.increase_score()
-        else:
             player_2.increase_score()
+        else:
+            player_1.increase_score()
         time.sleep(2)
         ball.home()
         l_paddle.goto(LEFT_START)
